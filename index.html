@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tweet Tweet Project</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  
+  <section class="todo-outer">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-12">
+          <h1></h1>
+          <div class="todo-inner text-center">
+            <span class="text-center custom-heading">Tweet Tweet</span>
+            <div class="form-row">
+              <div class="col-sm-12 mb-5 pb-2">
+                <nav class="navbar justify-content-between">
+                  <h2 class="forn-weight-bold display-5"></h2>
+                  <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search your tweet " aria-label="Search"
+                      id="searchTweetText" />
+                  </form>
+                </nav>
+              </div>
+              <div class="col-8 mr-sm-2">
+                <input type="text" class="form-control" placeholder="Post your tweet" id="addTweetFromInput" />
+                <input type="hidden" id="saveindex">
+              </div>
+              <button type="button" class="btn btn-info mr-sm-2" id="submitTweet">
+                Add Tweet
+              </button>
+              <button type="button" class="btn btn-info mr-sm-2" id="saveTweetBtn" style="display:none;">
+                Save Tweet
+              </button>
+              <button type="button" id="deleteAllTweetBtn" class="btn btn-dark">
+                Delete All Tweets
+              </button>
+            </div>
+            <div class="tweet-output">
+              <table class="table table-striped mt-3 mb-0" id="addTweetList">
+                <!-- <tr>
+                  <th scope="row">1</th>
+                  <td>Dummy Task</td>
+                  <td class="text-right"><button type="button" class="text-primary"><i class="fa fa-edit"></i> Edit</button></td>
+                  <td class="text-left"><button type="button" class="text-danger"><i class="fa fa-trash"></i> Delete <button></td>
+                </tr> -->
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
